@@ -1,28 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
 .container {
     border: 4px solid red;
 
     /* width: 700px; */
-    height: 60vh;
+    height: 20vh;
 
     display: flex;
     
     /* Основная ось */
-    justify-content: space-evenly;
+    /* justify-content: space-between; */
     
     /* Вспом ось */
-    align-items: space-evenly;
+    /* align-items: center; */
     
     
-    align-content: space-between;
+    /* align-content: stretch; */
     
-    flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
 
-    /* flex-flow: column wrap; */
+    flex-flow: row nowrap;
 }
 
 .elem {
-    width: 50px;
+    /* width: 50px; */
     /* height: 50px; */
     padding: 30px;
 
@@ -32,10 +36,22 @@
     text-align: center;
 }
 
-.elem:nth-child(8) {
-    height: 120px;
-    /* margin: 0 30px; */
-    position: relative;
-    top: 40px;
-    right: 30px;
+.elem:nth-child(4) {
+    /* order: 0; */
+    
+    /* flex-grow: 1; default 0*/
+    /* flex-shrink: 0; default 1*/
+    /* flex-basis: 150px; */
+    /* flex: 1 0 150px; */
+
+    /* Аналогия */
+    /* min-width: 150px; */
+    /* max-width: 100%; */
+    /* width: 100%; */
+
+    /* content < width < flex-basis < max, min */
+
+    /* align-self: flex-end; */
+    
+    /* margin-left: auto; */
 }

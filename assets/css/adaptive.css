@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    border: 2px solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+
+.name {
+    flex-grow: 0.5;
+    margin-left: auto;
+}
+
+.date {
+    flex-grow: 0.5;
+    text-align: right;
+}

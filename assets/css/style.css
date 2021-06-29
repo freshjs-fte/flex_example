@@ -1,0 +1,41 @@
+.container {
+    border: 4px solid red;
+
+    /* width: 700px; */
+    height: 60vh;
+
+    display: flex;
+    
+    /* Основная ось */
+    justify-content: space-evenly;
+    
+    /* Вспом ось */
+    align-items: space-evenly;
+    
+    
+    align-content: space-between;
+    
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    /* flex-flow: column wrap; */
+}
+
+.elem {
+    width: 50px;
+    /* height: 50px; */
+    padding: 30px;
+
+    border: 3px solid green;
+
+    font-size: 2em;
+    text-align: center;
+}
+
+.elem:nth-child(8) {
+    height: 120px;
+    /* margin: 0 30px; */
+    position: relative;
+    top: 40px;
+    right: 30px;
+}
